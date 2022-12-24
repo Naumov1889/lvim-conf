@@ -30,3 +30,6 @@ lvim.keys.visual_mode["<M-k>"] = ":m '<-2<CR>gv=gv"
 
 -- when paste don't yank selected text
 lvim.keys.visual_mode["p"] = '"_dP'
+
+-- alt-s to leap to line
+lvim.keys.normal_mode["<M-s>"] = "<cmd>lua LEAP_TO_LINE()<CR>"
