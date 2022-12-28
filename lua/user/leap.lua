@@ -5,7 +5,9 @@ if not status_ok then
 end
 
 leap.add_default_mappings()
-leap.opts.safe_labels = {}
+
+-- always show third labael
+-- leap.opts.safe_labels = {}
 
 local function get_line_starts(winid)
   local wininfo = vim.fn.getwininfo(winid)[1]
