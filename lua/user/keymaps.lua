@@ -1,6 +1,9 @@
 lvim.leader = "space"
 
+-- you can remap <leader>h which is for clearing search highlighting	and just write :noh when you want to clear
+
 -- lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+
 -- jk or kj go to normal mode from insert mode
 lvim.keys.insert_mode["jk"] = '<Esc>'
 lvim.keys.insert_mode["kj"] = '<Esc>'
@@ -37,3 +40,5 @@ lvim.keys.visual_mode["d"] = '"_d'
 
 -- alt-s to leap to line
 lvim.keys.normal_mode["<M-s>"] = "<cmd>lua LEAP_TO_LINE()<CR>"
+
+lvim.keys.normal_mode["<F5>"] = "<cmd>UndotreeToggle<CR>"
