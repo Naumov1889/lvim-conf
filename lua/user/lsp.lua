@@ -4,7 +4,7 @@ formatters.setup {
   {
     command = "prettier",
     extra_args = { "--print-width", "88" },
-    filetypes = { "typescript", "typescriptreact" },
+    filetypes = { "typescript", "typescriptreact", "css", "scss" },
   },
   { command = "black", filetypes = { "python" } },
 }
