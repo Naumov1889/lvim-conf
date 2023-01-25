@@ -1,6 +1,7 @@
 reload "user.plugins"
 reload "user.options"
 reload "user.keymaps"
+-- reload "user.lsp"
 reload "user.spectre"
 reload "user.leap"
 
@@ -11,16 +12,6 @@ lvim.format_on_save = {
   pattern = "*.lua",
   timeout = 1000,
 }
--- to disable icons and use a minimalist setup, uncomment the following
--- lvim.use_icons = false
-
-
--- -- Use which-key to add extra bindings with the leader-key prefix
--- lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
--- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
-
--- -- Change theme settings
--- lvim.colorscheme = "lunar"
 
 -- After changing plugin config exit and reopen LunarVim, Run :PackerSync
 lvim.builtin.alpha.active = true
