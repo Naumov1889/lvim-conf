@@ -37,6 +37,8 @@ lvim.keys.visual_mode["<M-k>"] = ":m '<-2<CR>gv=gv"
 lvim.keys.visual_mode["p"] = '"_dP'
 -- when delete don't yank selected text
 lvim.keys.visual_mode["d"] = '"_d'
+-- when delete whole line don't yank the line
+lvim.keys.normal_mode["dd"] = '"_dd'
 
 -- alt-s to leap to line
 lvim.keys.normal_mode["<M-s>"] = "<cmd>lua LEAP_TO_LINE()<CR>"
