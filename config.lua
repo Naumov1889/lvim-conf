@@ -13,9 +13,14 @@ lvim.format_on_save = false
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
+
+-- https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.builtin.nvimtree.setup.update_cwd = false
 
-lvim.builtin.treesitter.auto_install = true
+-- LunarVim igonores has this option set to hide node_modules, .git, etc.
+-- If you don't want that set it to empty obj. Or use toggle custom filter pressing U
+-- lvim.builtin.nvimtree.setup.filters.custom = { }
 
+lvim.builtin.treesitter.auto_install = true
