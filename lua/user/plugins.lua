@@ -2,6 +2,7 @@ lvim.plugins = {
   "ggandor/leap.nvim",
   "windwp/nvim-spectre",
   "mbbill/undotree",
+  "Exafunction/codeium.vim",
 
 
 
