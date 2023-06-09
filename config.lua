@@ -4,6 +4,7 @@ reload "user.keymaps"
 reload "user.lsp"
 reload "user.spectre"
 reload "user.leap"
+reload "user.telescope"
 
 -- general
 lvim.log.level = "info"
