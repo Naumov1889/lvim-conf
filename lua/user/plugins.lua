@@ -12,7 +12,7 @@ lvim.plugins = {
     end
   },
   {
-  "folke/persistence.nvim",
+    "folke/persistence.nvim",
     event = "BufReadPre", -- this will only start session saving when an actual file was opened
     lazy = true,
     config = function()
@@ -20,8 +20,8 @@ lvim.plugins = {
         dir = vim.fn.expand(vim.fn.stdpath "config" .. "/session/"),
         options = { "buffers", "curdir", "tabpages", "winsize" },
       }
-  end,
-},
+    end,
+  },
 
   --     {
   --       "folke/trouble.nvim",
