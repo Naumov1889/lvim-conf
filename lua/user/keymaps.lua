@@ -51,3 +51,16 @@ lvim.keys.normal_mode["dd"] = '"_dd'
 lvim.keys.normal_mode["<M-s>"] = "<cmd>lua LEAP_TO_LINE()<CR>"
 
 lvim.keys.normal_mode["<F5>"] = "<cmd>UndotreeToggle<CR>"
+
+
+-- toogleterm mappings
+-- https://github.com/akinsho/toggleterm.nvim#terminal-window-mappings
+function _G.set_terminal_keymaps()
+  local opts = {buffer = 0}
+
+  -- esc, jk, kj for normal mode
+  vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+  vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
+  vim.keymap.set('t', 'kj', [[<C-\><C-n>]], opts)
+end
+vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
