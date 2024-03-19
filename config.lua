@@ -25,4 +25,3 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 -- If you don't want that set it to empty obj. Or use toggle custom filter pressing U
 -- lvim.builtin.nvimtree.setup.filters.custom = { }
 
-lvim.builtin.treesitter.auto_install = true
