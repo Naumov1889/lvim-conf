@@ -22,9 +22,9 @@ lvim.plugins = {
       }
     end,
   },
-  {
-    "tpope/vim-fugitive",
-  },
+  -- {
+  --   "tpope/vim-fugitive",
+  -- },
   {
     -- <leader>gp - view git changes
     "lewis6991/gitsigns.nvim",
@@ -32,10 +32,6 @@ lvim.plugins = {
       require("gitsigns").setup()
     end,
   },
-  {
-    "jesseduffield/lazygit",
-  },
-
   --     {
   --       "folke/trouble.nvim",
   --       cmd = "TroubleToggle",
